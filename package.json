@@ -2,18 +2,23 @@
   "name": "hono",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "e2e": "playwright test"
   },
   "dependencies": {
     "hono": "^4.12.23"
   },
   "devDependencies": {
     "@hono/node-server": "^2.0.4",
-    "@types/node": "^24.0.0",
+    "@types/node": "^24.12.4",
     "dotenv": "^17.4.2",
     "tsx": "^4.22.3",
     "typescript": "^5.9.3",
     "vercel": "^54.6.0",
+    "vitest": "^4.1.7",
     "zod": "^4.4.3"
   },
   "engines": {
